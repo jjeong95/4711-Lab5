@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/lab5.css">
+    
+    <title>Document</title>
+</head>
+<body onload="getData()">
+    <div class="artistDirectory">
+            <div>
+                <b id="heading">Artist Directory</b>
+            </div>
+            <div>
+                <input id="searchBar" type="text">
+                <button class="styleButton" type="button" onclick="displayAdd()">Add Artist</button>
+                <button class ="styleButton" type="button" onclick="search()">Search</button>
+            </div>
+    </div>
+
+    <div id="addArtist">
+        <form>
+        <ul>
+            <input required id ="name"type="text" placeholder="Artist Name" maxlength="40"/>
+        </ul>
+        <ul>
+            <input required id="about" type="text" placeholder="About Artist" maxlength="40"/>
+        </ul>
+        <ul>
+            <input required id="url" type="text" placeholder="Image url"/>
+        </ul>
+        <input id="addButton"  type="button" value="Add" onclick="createArtist()"></input>
+        </form>
+    </div>
+
+
+    <div id="profileList">
+        <!-- <div class="profile">
+            <img src="https://randomuser.me/api/portraits/med/men/1.jpg">
+            <div class="profileText">
+                <p><b>Barrot Bellingham</b></p>
+                <p>Royal Academy of painting and sculpture</p>
+                
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://randomuser.me/api/portraits/med/men/2.jpg">
+            <div class="profileText">
+                <p><b>Jonathan G. Ferrar ll</b></p>
+                <p>Artist to Watch in 2012</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://randomuser.me/api/portraits/med/women/2.jpg">
+            <div class="profileText">
+                <p><b>Hillary Hewitt Goldwynn-Post</b></p>
+                <p>New York University</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://randomuser.me/api/portraits/med/men/2.jpg">
+            <div class="profileText">
+                <p><b>Hassum Harrod</b></p>
+                <p>Art College in New Dehli</p>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="https://randomuser.me/api/portraits/med/women/3.jpg">
+            <div class="profileText">
+                <p><b>Jennifer Jerome</b></p>
+                <p>New York University</p>
+            </div>
+        </div> -->
+    </div>    
+</body>
+</html>
+<script src="js/lab5.js"></script>
