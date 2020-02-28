@@ -12,8 +12,9 @@ function sendData(){
 }
 
 function getData(){
-  fetch('/getArtist').then((response)=>{
-    response.json().then(function (data){
+  fetch('/getArtist')
+  .then((res)=>{res.json()
+    .then(function (data){
       if (data.length > 0){
       
         artistList = data;

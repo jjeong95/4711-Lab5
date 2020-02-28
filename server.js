@@ -28,6 +28,6 @@ app.post('/addArtist', (req, res) => {
     var data = req.body;
     console.log(data);
     fs.writeFileSync("./artist.json", JSON.stringify(data));
-    res.send();
+    res.send(); 
     
 });
